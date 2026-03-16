@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+
+  <symbol id="i-vk" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12.785 16.241s.288-.032.436-.19c.136-.148.132-.424.132-.424s-.02-1.298.576-1.49c.588-.19 1.34 1.26 2.14 1.818.605.422 1.064.33 1.064.33l2.137-.03s1.117-.07.588-.953c-.043-.072-.308-.652-1.586-1.845-1.34-1.248-1.16-1.046.454-3.207.983-1.316 1.376-2.12 1.253-2.465-.117-.33-.84-.243-.84-.243l-2.406.015s-.178-.025-.31.055c-.13.08-.214.264-.214.264s-.382 1.03-.893 1.905c-1.076 1.843-1.507 1.94-1.683 1.826-.41-.268-.307-1.074-.307-1.648 0-1.79.267-2.537-.52-2.73-.262-.064-.454-.106-1.123-.113-.858-.009-1.585.003-1.996.207-.274.136-.485.44-.356.457.159.022.52.099.71.363.247.342.238 1.11.238 1.11s.142 2.11-.331 2.372c-.325.18-.77-.187-1.725-1.865-.489-.86-.859-1.81-.859-1.81s-.07-.177-.198-.272c-.154-.115-.37-.152-.37-.152l-2.286.015s-.343.01-.47.16c-.112.135-.009.413-.009.413s1.798 4.244 3.834 6.382c1.867 1.963 3.99 1.834 3.99 1.834h.961z"/>
+  </symbol>
+
+  <symbol id="i-telegram" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+  </symbol>
+
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+    <circle cx="12" cy="7" r="4"/>
+  </symbol>
+
+  <symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+    <line x1="8" y1="21" x2="16" y2="21"/>
+    <line x1="12" y1="17" x2="12" y2="21"/>
+  </symbol>
+
+  <symbol id="i-user-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M16 21v-2a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v2"/>
+    <circle cx="12" cy="9" r="3"/>
+  </symbol>
+
+  <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="19" y1="12" x2="5" y2="12"/>
+    <polyline points="12 19 5 12 12 5"/>
+  </symbol>
+
+  <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"/>
+    <polyline points="12 5 19 12 12 19"/>
+  </symbol>
+
+</svg>

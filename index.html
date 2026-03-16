@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>СПБ Консультант</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <!-- Верхняя фиолетовая часть -->
+  <div class="header-top">
+    <div class="header-top__inner">
+      <!-- Логотипы слева -->
+      <div class="header-top__logos">
+        <a href="/" class="header-top__logo-link">
+          <img src="/img/logo-consultant.svg" alt="КонсультантПлюс" class="logo-consultant" />
+        </a>
+        <a href="/" class="header-top__logo-link">
+          <img src="/img/logo-chdk.svg" alt="ЧДК Право" class="logo-chdk" />
+        </a>
+      </div>
+
+      <!-- Телефон + мессенджеры + кнопка -->
+      <div class="header-top__right">
+        <div class="header-top__phone-block">
+          <span class="phone-icon"></span>
+          <div class="header-top__phone-info">
+            <a href="tel:+78123344481" class="header-top__phone-number">8 812 334 44 81</a>
+            <span class="header-top__phone-hours">пн-пт 9:00-19:00</span>
+          </div>
+        </div>
+
+        <div class="header-top__messengers">
+          <a href="#" class="messenger-link" aria-label="MAX">
+            <img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" />
+          </a>
+          <a href="#" class="messenger-link" aria-label="Telegram">
+            <img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" />
+          </a>
+        </div>
+
+        <a href="#" class="btn btn--yellow-on-purple header-top__cta-btn">Узнать цену</a>
+      </div>
+
+      <!-- Бургер (мобильная версия) -->
+      <button class="header-burger" aria-label="Меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Нижняя навигационная часть -->
+  <nav class="header-nav">
+    <div class="header-nav__inner">
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Бухгалтеру</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Юристу</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Руководителю</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Бюджету</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Линия консультаций</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">О нас</a></li>
+        <li class="header-nav__item header-nav__item--dropdown">
+          <button class="header-nav__link header-nav__link--dropdown" aria-expanded="false">
+            Новости
+            <svg class="nav-arrow" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="header-nav__dropdown">
+            <a href="#" class="header-nav__dropdown-link">Новости</a>
+            <a href="#" class="header-nav__dropdown-link">Вопрос-ответ</a>
+            <a href="#" class="header-nav__dropdown-link">Правовые сборники</a>
+          </div>
+        </li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+        <li class="header-nav__item header-nav__item--lk">
+          <a href="#" class="header-nav__link header-nav__link--lk">
+            <img src="/img/lk-icon.svg" alt="" class="lk-icon" />
+            Личный кабинет
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-nav__line"></div>
+  </nav>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+        <li><a href="#" class="mobile-menu__link">Бухгалтеру</a></li>
+        <li><a href="#" class="mobile-menu__link">Юристу</a></li>
+        <li><a href="#" class="mobile-menu__link">Руководителю</a></li>
+        <li><a href="#" class="mobile-menu__link">Бюджету</a></li>
+        <li><a href="#" class="mobile-menu__link">Линия консультаций</a></li>
+        <li><a href="#" class="mobile-menu__link">О нас</a></li>
+        <li><a href="#" class="mobile-menu__link">Новости</a></li>
+        <li><a href="#" class="mobile-menu__link">Вопрос-ответ</a></li>
+        <li><a href="#" class="mobile-menu__link">Правовые сборники</a></li>
+        <li><a href="#" class="mobile-menu__link">Контакты</a></li>
+        <li><a href="#" class="mobile-menu__link mobile-menu__link--lk">Личный кабинет</a></li>
+      </ul>
+      <div class="mobile-menu__contacts">
+        <a href="tel:+78123344481" class="mobile-menu__phone">8 812 334 44 81</a>
+        <span class="mobile-menu__hours">пн-пт 9:00-19:00</span>
+        <div class="mobile-menu__messengers">
+          <a href="#" aria-label="MAX"><img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" /></a>
+          <a href="#" aria-label="Telegram"><img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" /></a>
+        </div>
+        <a href="#" class="btn btn--yellow mobile-menu__cta">Узнать цену</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ====== HERO СЕКЦИЯ ====== -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__title--orange">Официальный представитель</span>
+        <span class="hero__title--black">КонсультантПлюс в&nbsp;Санкт-Петербурге и&nbsp;Ленобласти</span>
+      </h1>
+      <p class="hero__subtitle">
+        Быстрый поиск решений для бухгалтеров, юристов и&nbsp;руководителей
+      </p>
+      <div class="hero__actions hero__actions--desktop">
+        <a href="#" class="btn btn--yellow">Купить Консультант Плюс</a>
+        <a href="#" class="btn btn--outline-gray">Попробовать бесплатно</a>
+      </div>
+    </div>
+    <div class="hero__images">
+      <img src="/img/interface.png" alt="Интерфейс КонсультантПлюс" class="hero__img" />
+    </div>
+    <div class="hero__actions hero__actions--mobile">
+      <a href="#" class="btn btn--yellow">Купить Консультант Плюс</a>
+      <a href="#" class="btn btn--outline-gray">Попробовать бесплатно</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== СМАРТ-КОМПЛЕКТЫ ====== -->
+<section class="sk">
+  <div class="sk__inner">
+    <h2 class="sk__title">Мы выбрали для&nbsp;Вас<br>оптимальные смарт-комплекты</h2>
+
+    <!-- Верхний ряд: 3 карточки -->
+    <div class="sk__row sk__row--top">
+
+      <!-- Бухгалтеру -->
+      <div class="sk-card sk-card--purple">
+        <div class="sk-card__header">
+          <h3 class="sk-card__title">Бухгалтеру</h3>
+          <img src="/img/SK-buhgalter.png" alt="" class="sk-card__icon" />
+        </div>
+        <div class="sk-card__body">
+          <p class="sk-card__text">
+            Ваш надёжный проводник в&nbsp;мире цифр и&nbsp;законов&nbsp;&mdash; все актуальные материалы
+            по&nbsp;бухучёту, налогам и&nbsp;отчётности. Последние изменения в&nbsp;законодательстве
+            для уверенной работы, без рисков и&nbsp;штрафов.
+          </p>
+          <div class="sk-card__actions">
+            <a href="#" class="btn btn--yellow btn--sm">Узнать цену</a>
+            <a href="#" class="btn btn--link-yellow btn--sm">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Юристу -->
+      <div class="sk-card sk-card--orange">
+        <div class="sk-card__header">
+          <h3 class="sk-card__title">Юристу</h3>
+          <img src="/img/SK-jurist.png" alt="" class="sk-card__icon" />
+        </div>
+        <div class="sk-card__body">
+          <p class="sk-card__text">
+            Профессиональный инструмент для победы в&nbsp;спорах и&nbsp;защиты интересов&nbsp;&mdash;
+            полная база судебной практики, актуальные законы и&nbsp;формы документов. Аналитика
+            позиций судов по&nbsp;сложным вопросам.
+          </p>
+          <div class="sk-card__actions">
+            <a href="#" class="btn btn--yellow btn--sm">Узнать цену</a>
+            <a href="#" class="btn btn--link-yellow btn--sm">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Руководителю -->
+      <div class="sk-card sk-card--purple">
+        <div class="sk-card__header">
+          <h3 class="sk-card__title sk-card__title--ruk">Руководителю</h3>
+          <img src="/img/SK-rukovoditel.png" alt="" class="sk-card__icon" />
+        </div>
+        <div class="sk-card__body">
+          <p class="sk-card__text">
+            Универсальная система для контроля рисков&nbsp;&mdash; принимайте важные стратегические
+            решения, опираясь только на&nbsp;проверенные данные. Мониторинг изменений в&nbsp;законах
+            и&nbsp;экспертные материалы по&nbsp;правовым вопросам.
+          </p>
+          <div class="sk-card__actions">
+            <a href="#" class="btn btn--yellow btn--sm">Узнать цену</a>
+            <a href="#" class="btn btn--link-yellow btn--sm">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Нижний ряд: 2 карточки -->
+    <div class="sk__row sk__row--bottom">
+
+      <!-- Бюджетной организации -->
+      <div class="sk-card sk-card--orange">
+        <div class="sk-card__header">
+          <h3 class="sk-card__title sk-card__title--sm">Бюджетной<br>организации</h3>
+          <img src="/img/SK-bujet-org.png" alt="" class="sk-card__icon" />
+        </div>
+        <div class="sk-card__body">
+          <p class="sk-card__text">
+            Специализированная информация по&nbsp;госзакупкам (44&#8209;ФЗ, 223&#8209;ФЗ),
+            бюджетному учёту и&nbsp;трудовым правам госслужащих. Актуальные формы документов
+            и&nbsp;методические рекомендации для стабильной работы.
+          </p>
+          <div class="sk-card__actions">
+            <a href="#" class="btn btn--yellow btn--sm">Узнать цену</a>
+            <a href="#" class="btn btn--link-yellow btn--sm">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Кадровому специалисту -->
+      <div class="sk-card sk-card--purple">
+        <div class="sk-card__header">
+          <h3 class="sk-card__title sk-card__title--sm">Кадровому<br>специалисту</h3>
+          <img src="/img/SK-kadr-ruk.png" alt="" class="sk-card__icon" />
+        </div>
+        <div class="sk-card__body">
+          <p class="sk-card__text">
+            Актуальные трудовые законы, готовые формы документов. Консультации по&nbsp;сложным
+            ситуациям с&nbsp;сотрудниками и&nbsp;проверки на&nbsp;соответствие требованиям закона.
+            Создавайте надёжную основу для работы коллектива.
+          </p>
+          <div class="sk-card__actions">
+            <a href="#" class="btn btn--yellow btn--sm">Узнать цену</a>
+            <a href="#" class="btn btn--link-yellow btn--sm">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ====== БЕСПЛАТНЫЙ ДОСТУП ====== -->
+<section class="trial">
+  <div class="trial__inner">
+    <div class="trial__card">
+
+      <!-- Левая часть -->
+      <div class="trial__left">
+        <h2 class="trial__title">
+          Получите бесплатный <span class="trial__title--orange">пробный доступ</span> и&nbsp;откройте все возможности системы <span class="trial__title--orange">КонсультантПлюс</span>
+        </h2>
+
+        <div class="trial__features">
+          <div class="trial__feature trial__feature--orange">
+            <div class="trial__feature-icon">
+              <img src="/img/logo-consultant-crop.svg" alt="" />
+            </div>
+            <div class="trial__feature-info">
+              <span class="trial__feature-name">Система КонсультантПлюс</span>
+              <span class="trial__feature-desc">Полный доступ на 2 дня</span>
+            </div>
+          </div>
+
+          <div class="trial__feature trial__feature--purple">
+            <div class="trial__feature-icon">
+              <img src="/img/lk-icon-big.svg" alt="" />
+            </div>
+            <div class="trial__feature-info">
+              <span class="trial__feature-name">Личный кабинет ЧДК-Онлайн</span>
+              <span class="trial__feature-desc">Эксклюзивный сервис для клиентов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правая часть: форма -->
+      <div class="trial__right">
+        <form class="trial__form" action="#" method="POST">
+          <input type="text" class="trial__input" placeholder="Ваше Имя" required />
+          <div class="trial__row">
+            <input type="tel" class="trial__input" placeholder="+7 (9__) ___ - __ - __" required />
+            <input type="email" class="trial__input" placeholder="Электронная почта" />
+          </div>
+          <label class="trial__checkbox">
+            <input type="checkbox" required />
+            <span>Я ознакомлен с <a href="#" class="trial__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
+          </label>
+          <button type="submit" class="trial__submit">Попробовать бесплатно</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ====== СЕРВИС ЧДК-ПРАВО ====== -->
+<section class="chdk">
+  <div class="chdk__inner">
+    <h2 class="chdk__title">Сервис ЧДК-Право</h2>
+    <p class="chdk__subtitle">Всем клиентам КонсультантПлюс предоставляется доступ к&nbsp;уникальному сервису ЧДК-Право</p>
+
+    <div class="chdk__grid">
+
+      <!-- 1. Экспертная линия -->
+      <div class="chdk-card chdk-card--yellow">
+        <h3 class="chdk-card__title chdk-card__title--yellow">Экспертная линия консультаций</h3>
+        <p class="chdk-card__text">Развёрнутые ответы и&nbsp;разбор ситуации по&nbsp;правовым нормам</p>
+        <div class="chdk-card__actions">
+          <a href="#" class="btn btn--sm chdk-card__btn chdk-card__btn--yellow">Задать вопрос</a>
+          <a href="#" class="btn btn--link-yellow btn--sm chdk-card__link">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 2. Персональный менеджер -->
+      <div class="chdk-card chdk-card--purple">
+        <h3 class="chdk-card__title chdk-card__title--purple">Персональный менеджер</h3>
+        <p class="chdk-card__text">Поможет решить любой вопрос и&nbsp;разобраться с&nbsp;системой КонсультантПлюс</p>
+        <div class="chdk-card__actions">
+          <a href="#" class="btn btn--sm chdk-card__btn chdk-card__btn--purple">Обратиться</a>
+          <a href="#" class="btn btn--link-purple btn--sm chdk-card__link">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 3. Обучение -->
+      <div class="chdk-card chdk-card--yellow">
+        <h3 class="chdk-card__title chdk-card__title--yellow">Обучение работе с&nbsp;КонсультантПлюс</h3>
+        <p class="chdk-card__text">Обучение эффективной работе с&nbsp;КонсультантПлюс</p>
+        <div class="chdk-card__actions">
+          <a href="#" class="btn btn--sm chdk-card__btn chdk-card__btn--yellow">Заказать</a>
+          <a href="#" class="btn btn--link-yellow btn--sm chdk-card__link">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 4. Семинары -->
+      <div class="chdk-card chdk-card--purple">
+        <h3 class="chdk-card__title chdk-card__title--purple">Запись на&nbsp;семинары-тренинги</h3>
+        <p class="chdk-card__text">От экспертов КонсультантПлюс и&nbsp;ТОП-лекторов</p>
+        <div class="chdk-card__actions">
+          <a href="#" class="btn btn--sm chdk-card__btn chdk-card__btn--purple">Записаться</a>
+          <a href="#" class="btn btn--link-purple btn--sm chdk-card__link">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 5. Техподдержка -->
+      <div class="chdk-card chdk-card--yellow">
+        <h3 class="chdk-card__title chdk-card__title--yellow">Техподдержка</h3>
+        <p class="chdk-card__text">Адаптация, модификация и&nbsp;сопровождение системы</p>
+        <div class="chdk-card__actions">
+          <a href="#" class="btn btn--sm chdk-card__btn chdk-card__btn--yellow">Обратиться</a>
+          <a href="#" class="btn btn--link-yellow btn--sm chdk-card__link">Подробнее</a>
+        </div>
+      </div>
+
+      <!-- 6. Проверка контрагента -->
+      <div class="chdk-card chdk-card--purple">
+        <h3 class="chdk-card__title chdk-card__title--purple">Проверка контрагента</h3>
+        <p class="chdk-card__text">Проверьте надёжность любой организации или&nbsp;ИП</p>
+        <div class="chdk-card__actions">
+          <a href="#" class="btn btn--sm chdk-card__btn chdk-card__btn--purple">Проверить</a>
+          <a href="#" class="btn btn--link-purple btn--sm chdk-card__link">Подробнее</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ====== ОТЗЫВЫ КЛИЕНТОВ ====== -->
+<section class="reviews">
+  <div class="reviews__container">
+    <div class="reviews__inner">
+      <h2 class="reviews__title">Отзывы клиентов</h2>
+
+      <div class="reviews__carousel">
+        <button class="reviews__btn reviews__btn--prev" aria-label="Предыдущий отзыв">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="reviews__viewport">
+          <div class="reviews__track">
+            <div class="reviews__slide" data-index="0">
+              <div class="reviews__card">
+                <img src="/img/otz1.png" alt="Отзыв ООО «БАДИС»" class="reviews__card-img" loading="lazy" />
+              </div>
+            </div>
+            <div class="reviews__slide" data-index="1">
+              <div class="reviews__card">
+                <img src="/img/otz2.png" alt="Отзыв ЗАО «Тепломагистраль»" class="reviews__card-img" loading="lazy" />
+              </div>
+            </div>
+            <div class="reviews__slide" data-index="2">
+              <div class="reviews__card">
+                <img src="/img/otz3.png" alt="Отзыв ООО «РЭЦ «Петрохим-Технология»" class="reviews__card-img" loading="lazy" />
+              </div>
+            </div>
+            <div class="reviews__slide" data-index="3">
+              <div class="reviews__card">
+                <img src="/img/otz4.png" alt="Отзыв НО «ФКР МКД СПБ»" class="reviews__card-img" loading="lazy" />
+              </div>
+            </div>
+            <div class="reviews__slide" data-index="4">
+              <div class="reviews__card">
+                <img src="/img/otz5.png" alt="Отзыв РГПУ им. А. И. Герцена" class="reviews__card-img" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="reviews__btn reviews__btn--next" aria-label="Следующий отзыв">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ====== ПОДВАЛ ====== -->
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="footer__inner">
+
+      <!-- Верхняя строка: логотипы + кнопка -->
+      <div class="footer__top">
+        <div class="footer__logos">
+          <a href="/" class="footer__logo-link">
+            <img src="/img/logo-consultant.svg" alt="КонсультантПлюс" class="footer__logo footer__logo--consultant" />
+          </a>
+          <a href="/" class="footer__logo-link">
+            <img src="/img/logo-chdk.svg" alt="ЧДК Право" class="footer__logo footer__logo--chdk" />
+          </a>
+        </div>
+        <a href="#" class="btn btn--yellow footer__price-btn">Скачать прайс-лист</a>
+      </div>
+
+      <!-- Нижняя строка: контакты + навигация -->
+      <div class="footer__bottom">
+
+        <!-- Колонка 1: Контакты -->
+        <div class="footer__contacts">
+          <div class="footer__phone-row">
+            <div class="footer__phone-block">
+              <span class="footer__phone-icon"></span>
+              <a href="tel:+78123344481" class="footer__phone-number">8 812 334 44 81</a>
+            </div>
+            <div class="footer__messengers footer__messengers--mobile">
+              <a href="#" class="messenger-link" aria-label="MAX">
+                <img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" />
+              </a>
+              <a href="#" class="messenger-link" aria-label="Telegram">
+                <img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" />
+              </a>
+            </div>
+          </div>
+          <span class="footer__phone-hours">пн-пт 9:00-19:00</span>
+          <div class="footer__messengers footer__messengers--desktop">
+            <a href="#" class="messenger-link" aria-label="MAX">
+              <img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" />
+            </a>
+            <a href="#" class="messenger-link" aria-label="Telegram">
+              <img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Кнопка (мобильная) -->
+        <a href="#" class="btn btn--yellow footer__price-btn footer__price-btn--mobile">Скачать прайс-лист</a>
+
+        <!-- Колонка 2: Ссылки (левая) -->
+        <nav class="footer__nav footer__nav--col1">
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link">О СПС КонсультантПлюс</a></li>
+            <li><a href="#" class="footer__nav-link">Системы</a></li>
+            <li><a href="#" class="footer__nav-link">Пробный доступ</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Колонка 3: Ссылки (правая) -->
+        <nav class="footer__nav footer__nav--col2">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item--desktop-only"><a href="#" class="footer__nav-link">Контакты</a></li>
+            <li><a href="#" class="footer__nav-link">Обучение</a></li>
+            <li><a href="#" class="footer__nav-link">Сервис для клиентов</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link footer__nav-link--muted">Политика конфиденциальности</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link footer__nav-link--muted">Пользовательское соглашение</a></li>
+          </ul>
+        </nav>
+
+        <!-- Колонка 4: Правовые документы (десктоп) -->
+        <nav class="footer__nav footer__nav--col3 footer__nav--desktop-only">
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link footer__nav-link--muted">Политика конфиденциальности</a></li>
+            <li><a href="#" class="footer__nav-link footer__nav-link--muted">Пользовательское соглашение</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
