@@ -2586,3 +2586,296 @@ img {
   opacity: 1;
   transform: scale(1.15);
 }
+/* ====================================================
+   МОДАЛЬНЫЕ ОКНА
+   ==================================================== */
+
+/* --- Оверлей --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* --- Окно --- */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  z-index: 1001;
+  background: #fff;
+  border-radius: 30px;
+  padding: 48px 44px;
+  width: 90%;
+  max-width: 580px;
+  max-height: 90vh;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.modal.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* --- Крестик закрытия --- */
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  line-height: 1;
+  color: #999;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+  font-family: 'Gilroy', sans-serif;
+}
+
+.modal__close:hover {
+  color: #333;
+}
+
+/* --- Заголовок --- */
+.modal__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #333;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* --- Подзаголовок --- */
+.modal__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.modal__accent--purple {
+  color: #64619B;
+  font-weight: 600;
+}
+
+.modal__accent--yellow {
+  color: #F5A623;
+  font-weight: 600;
+}
+
+/* --- Форма --- */
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal__input {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  border: 1.5px solid #D8D8D8;
+  border-radius: 14px;
+  padding: 18px 22px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.modal__input::placeholder {
+  color: #999;
+}
+
+.modal__input:focus {
+  border-color: var(--purple);
+}
+
+.modal__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* --- Чекбокс --- */
+.modal__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #555;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.modal__checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: var(--purple);
+  cursor: pointer;
+}
+
+.modal__policy-link {
+  color: #64619B;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.modal__policy-link:hover {
+  color: #4e4f8a;
+}
+
+/* --- Кнопка отправки --- */
+.modal__submit {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+  margin-top: 8px;
+}
+
+.modal__submit:active {
+  transform: scale(0.98);
+}
+
+.modal__submit--purple {
+  background-color: #64619B;
+}
+
+.modal__submit--purple:hover {
+  background-color: #524f85;
+}
+
+.modal__submit--yellow {
+  background-color: #F5A623;
+}
+
+.modal__submit--yellow:hover {
+  background-color: #D49500;
+}
+
+/* --- Модалка 3: Кнопки выбора (Состояние A) --- */
+.modal__choice {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.modal__choice-btn {
+  flex: 1;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 22px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.modal__choice-btn:active {
+  transform: scale(0.97);
+}
+
+.modal__choice-btn--purple {
+  background-color: #64619B;
+}
+
+.modal__choice-btn--purple:hover {
+  background-color: #524f85;
+}
+
+.modal__choice-btn--yellow {
+  background-color: #F5A623;
+}
+
+.modal__choice-btn--yellow:hover {
+  background-color: #D49500;
+}
+
+/* --- Шаги внутри модалки 3 --- */
+.modal__step {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal__step--active {
+  display: block;
+  opacity: 1;
+}
+
+/* Анимация появления шага */
+.modal__step--entering {
+  display: block;
+  opacity: 0;
+}
+
+/* --- Блокировка скролла --- */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* --- Адаптивность --- */
+@media (max-width: 600px) {
+  .modal {
+    padding: 36px 24px;
+    border-radius: 24px;
+    width: 94%;
+  }
+
+  .modal__title {
+    font-size: 26px;
+  }
+
+  .modal__subtitle {
+    font-size: 14px;
+  }
+
+  .modal__input {
+    padding: 16px 18px;
+  }
+
+  .modal__submit {
+    font-size: 16px;
+    padding: 18px;
+  }
+
+  .modal__choice {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modal__choice-btn {
+    font-size: 18px;
+    padding: 18px;
+  }
+}

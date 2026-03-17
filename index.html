@@ -514,6 +514,93 @@
     </div>
   </div>
 </footer>
+<!-- ====== МОДАЛЬНЫЕ ОКНА ====== -->
+
+<!-- Оверлей -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<!-- Модалка 1: Узнать цену -->
+<div class="modal" id="modalPrice">
+  <button class="modal__close" aria-label="Закрыть">&times;</button>
+  <h2 class="modal__title">Заполните форму</h2>
+  <p class="modal__subtitle">Чтобы получить <span class="modal__accent--purple">персональное предложение</span> на&nbsp;КонсультантПлюс</p>
+  <form class="modal__form" action="#" method="POST">
+    <input type="text" class="modal__input" placeholder="Ваше Имя" required />
+    <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
+    <input type="email" class="modal__input" placeholder="Электронная почта" />
+    <label class="modal__checkbox">
+      <input type="checkbox" required />
+      <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
+    </label>
+    <button type="submit" class="modal__submit modal__submit--purple">Узнать цену</button>
+  </form>
+</div>
+
+<!-- Модалка 2: Пробный доступ -->
+<div class="modal" id="modalTrial">
+  <button class="modal__close" aria-label="Закрыть">&times;</button>
+  <h2 class="modal__title">Заполните форму</h2>
+  <p class="modal__subtitle">Чтобы получить <span class="modal__accent--yellow">пробный доступ</span> к&nbsp;КонсультантПлюс и&nbsp;сервису ЧДК-Право</p>
+  <form class="modal__form" action="#" method="POST">
+    <input type="text" class="modal__input" placeholder="Ваше Имя" required />
+    <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
+    <input type="email" class="modal__input" placeholder="Электронная почта" />
+    <label class="modal__checkbox">
+      <input type="checkbox" required />
+      <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
+    </label>
+    <button type="submit" class="modal__submit modal__submit--yellow">Получить бесплатный доступ</button>
+  </form>
+</div>
+
+<!-- Модалка 3: Личный кабинет (3 состояния) -->
+<div class="modal" id="modalLk">
+  <button class="modal__close" aria-label="Закрыть">&times;</button>
+
+  <!-- Состояние A: Вопрос -->
+  <div class="modal__step modal__step--active" data-step="a">
+    <h2 class="modal__title">Вы уже являетесь нашим клиентом?</h2>
+    <div class="modal__choice">
+      <button type="button" class="modal__choice-btn modal__choice-btn--purple" data-goto="b">Да</button>
+      <button type="button" class="modal__choice-btn modal__choice-btn--yellow" data-goto="c">Еще нет</button>
+    </div>
+  </div>
+
+  <!-- Состояние B: Форма (клиент) -->
+  <div class="modal__step" data-step="b">
+    <h2 class="modal__title">Заполните форму</h2>
+    <p class="modal__subtitle">Наш специалист свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
+    <form class="modal__form" action="#" method="POST">
+      <input type="text" class="modal__input" placeholder="Ваше Имя" required />
+      <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
+      <input type="email" class="modal__input" placeholder="Электронная почта" />
+      <label class="modal__checkbox">
+        <input type="checkbox" required />
+        <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
+      </label>
+      <button type="submit" class="modal__submit modal__submit--yellow">Отправить</button>
+    </form>
+  </div>
+
+  <!-- Состояние C: Форма (не клиент, с textarea) -->
+  <div class="modal__step" data-step="c">
+    <h2 class="modal__title">Заполните форму</h2>
+    <p class="modal__subtitle">Наш специалист свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
+    <form class="modal__form" action="#" method="POST">
+      <input type="text" class="modal__input" placeholder="Ваше Имя" required />
+      <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
+      <input type="email" class="modal__input" placeholder="Электронная почта" />
+      <textarea class="modal__input modal__textarea" placeholder="Ваш вопрос"></textarea>
+      <label class="modal__checkbox">
+        <input type="checkbox" required />
+        <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
+      </label>
+      <button type="submit" class="modal__submit modal__submit--yellow">Отправить</button>
+    </form>
+  </div>
+</div>
+
 <script type="module" src="/src/main.js"></script>
+<script src="/src/modals.js"></script>
 </body>
 </html>
