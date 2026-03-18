@@ -1,3 +1,5 @@
+import './modals.js';
+
 // ===== Dropdown «Новости» =====
 const dropdownItem = document.querySelector('.header-nav__item--dropdown');
 const dropdownBtn = dropdownItem?.querySelector('.header-nav__link--dropdown');
