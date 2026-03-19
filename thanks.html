@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заявка принята — КонсультантПлюс</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    .thanks {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px var(--header-side-padding);
+      min-height: 55vh;
+    }
+    .thanks__inner {
+      max-width: 560px;
+      text-align: center;
+    }
+    .thanks__icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 32px;
+      background: var(--purple);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .thanks__icon svg {
+      width: 40px;
+      height: 40px;
+      color: #fff;
+    }
+    .thanks__title {
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.2;
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+    .thanks__text {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .thanks__phone {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--purple);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .thanks__phone:hover { opacity: 0.8; }
+    .thanks__hours {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 40px;
+    }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    .footer { margin-top: auto; }
+    @media (max-width: 600px) {
+      .thanks__title { font-size: 24px; }
+      .thanks { padding: 60px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="header-top__inner">
+      <div class="header-top__logos">
+        <a href="/" class="header-top__logo-link">
+          <img src="/img/logo-consultant.svg" alt="КонсультантПлюс" class="logo-consultant" />
+        </a>
+        <a href="/" class="header-top__logo-link">
+          <img src="/img/logo-chdk.svg" alt="ЧДК Право" class="logo-chdk" />
+        </a>
+      </div>
+      <div class="header-top__right">
+        <div class="header-top__phone-block">
+          <span class="phone-icon"></span>
+          <div class="header-top__phone-info">
+            <a href="tel:+78123344481" class="header-top__phone-number">8 812 334 44 81</a>
+            <span class="header-top__phone-hours">пн-пт 9:00-19:00</span>
+          </div>
+        </div>
+        <div class="header-top__messengers">
+          <a href="#" class="messenger-link" aria-label="MAX">
+            <img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" />
+          </a>
+          <a href="#" class="messenger-link" aria-label="Telegram">
+            <img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" />
+          </a>
+        </div>
+        <a href="/" class="btn btn--yellow-on-purple header-top__cta-btn">На главную</a>
+      </div>
+      <button class="header-burger" aria-label="Меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="thanks">
+  <div class="thanks__inner">
+    <div class="thanks__icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1 class="thanks__title">Заявка принята!</h1>
+    <p class="thanks__text">
+      Спасибо, что обратились к нам. Наш специалист свяжется с&nbsp;вами в&nbsp;ближайшее рабочее время.
+    </p>
+    <a href="tel:+78123344481" class="thanks__phone">8 812 334 44 81</a>
+    <p class="thanks__hours">пн-пт 9:00–19:00</p>
+    <a href="/" class="btn btn--purple">Вернуться на главную</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__logos">
+          <a href="/" class="footer__logo-link">
+            <img src="/img/logo-consultant.svg" alt="КонсультантПлюс" class="footer__logo footer__logo--consultant" />
+          </a>
+          <a href="/" class="footer__logo-link">
+            <img src="/img/logo-chdk.svg" alt="ЧДК Право" class="footer__logo footer__logo--chdk" />
+          </a>
+        </div>
+        <a href="#" class="btn btn--yellow footer__price-btn">Скачать прайс-лист</a>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__contacts">
+          <div class="footer__phone-row">
+            <div class="footer__phone-block">
+              <span class="footer__phone-icon"></span>
+              <a href="tel:+78123344481" class="footer__phone-number">8 812 334 44 81</a>
+            </div>
+            <div class="footer__messengers footer__messengers--mobile">
+              <a href="#" class="messenger-link" aria-label="MAX">
+                <img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" />
+              </a>
+              <a href="#" class="messenger-link" aria-label="Telegram">
+                <img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" />
+              </a>
+            </div>
+          </div>
+          <span class="footer__phone-hours">пн-пт 9:00-19:00</span>
+          <div class="footer__messengers footer__messengers--desktop">
+            <a href="#" class="messenger-link" aria-label="MAX">
+              <img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" />
+            </a>
+            <a href="#" class="messenger-link" aria-label="Telegram">
+              <img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" />
+            </a>
+          </div>
+        </div>
+        <a href="#" class="btn btn--yellow footer__price-btn footer__price-btn--mobile">Скачать прайс-лист</a>
+        <nav class="footer__nav footer__nav--col1">
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link">О СПС КонсультантПлюс</a></li>
+            <li><a href="#" class="footer__nav-link">Системы</a></li>
+            <li><a href="#" class="footer__nav-link">Пробный доступ</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--col2">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item--desktop-only"><a href="#" class="footer__nav-link">Контакты</a></li>
+            <li><a href="#" class="footer__nav-link">Обучение</a></li>
+            <li><a href="#" class="footer__nav-link">Сервис для клиентов</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link footer__nav-link--muted">Политика конфиденциальности</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link footer__nav-link--muted">Пользовательское соглашение</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--col3 footer__nav--desktop-only">
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link footer__nav-link--muted">Политика конфиденциальности</a></li>
+            <li><a href="#" class="footer__nav-link footer__nav-link--muted">Пользовательское соглашение</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

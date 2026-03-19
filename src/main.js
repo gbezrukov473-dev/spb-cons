@@ -1,4 +1,10 @@
 import './modals.js';
+import './buy-tabs.js';
+import { initPhoneMask } from './phone-mask.js';
+import { initLeadForms } from './form-submit.js';
+
+initPhoneMask();
+initLeadForms();
 
 // ===== Dropdown «Новости» =====
 const dropdownItem = document.querySelector('.header-nav__item--dropdown');

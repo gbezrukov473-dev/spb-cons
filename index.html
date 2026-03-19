@@ -130,18 +130,18 @@
         Быстрый поиск решений для бухгалтеров, юристов и&nbsp;руководителей
       </p>
       <div class="hero__actions hero__actions--desktop">
-        <a href="#" class="btn btn--yellow">Купить Консультант Плюс</a>
+        <a href="/buy.html" class="btn btn--yellow">Купить Консультант Плюс</a>
         <a href="#" class="btn btn--outline-gray">Попробовать бесплатно</a>
       </div>
-    </div>
+        </div>
     <div class="hero__images">
       <img src="/img/interface.png" alt="Интерфейс КонсультантПлюс" class="hero__img" />
     </div>
     <div class="hero__actions hero__actions--mobile">
-      <a href="#" class="btn btn--yellow">Купить Консультант Плюс</a>
+      <a href="/buy.html" class="btn btn--yellow">Купить Консультант Плюс</a>
       <a href="#" class="btn btn--outline-gray">Попробовать бесплатно</a>
     </div>
-  </div>
+    </div>
 </section>
 
 <!-- ====== СМАРТ-КОМПЛЕКТЫ ====== -->
@@ -290,16 +290,25 @@
 
       <!-- Правая часть: форма -->
       <div class="trial__right">
-        <form class="trial__form" action="#" method="POST">
-          <input type="text" class="trial__input" placeholder="Ваше Имя" required />
+        <form class="trial__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="trial-main" data-thanks="/thanks.html">
+          <input type="text" name="name" class="trial__input" placeholder="Ваше Имя" />
+          <p class="form-field-error hidden" data-error-for="name"></p>
           <div class="trial__row">
-            <input type="tel" class="trial__input" placeholder="+7 (9__) ___ - __ - __" required />
-            <input type="email" class="trial__input" placeholder="Электронная почта" />
+            <input type="tel" name="phone" class="trial__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+            <input type="email" name="email" class="trial__input" placeholder="Электронная почта" />
           </div>
+          <p class="form-field-error hidden" data-error-for="phone"></p>
           <label class="trial__checkbox">
-            <input type="checkbox" required />
+            <input type="checkbox" name="consent" required />
             <span>Я ознакомлен с <a href="#" class="trial__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
           </label>
+          <p class="form-field-error hidden" data-error-for="consent"></p>
+          <div class="form-error-box hidden" data-form-error></div>
+          <div class="form-success-box hidden" data-form-success></div>
+          <input type="hidden" name="form_id" value="trial-main" />
+          <input type="hidden" name="page" value="/" />
+          <input type="hidden" name="fill_time_ms" value="" />
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <button type="submit" class="trial__submit">Попробовать бесплатно</button>
         </form>
       </div>
@@ -525,14 +534,22 @@
   <button class="modal__close" aria-label="Закрыть">&times;</button>
   <h2 class="modal__title">Заполните форму</h2>
   <p class="modal__subtitle">Чтобы получить <span class="modal__accent--purple">персональное предложение</span> на&nbsp;КонсультантПлюс</p>
-  <form class="modal__form" action="#" method="POST">
-    <input type="text" class="modal__input" placeholder="Ваше Имя" required />
-    <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
-    <input type="email" class="modal__input" placeholder="Электронная почта" />
+  <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-price" data-thanks="/thanks.html">
+    <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+    <p class="form-field-error hidden" data-error-for="name"></p>
+    <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+    <p class="form-field-error hidden" data-error-for="phone"></p>
+    <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
     <label class="modal__checkbox">
-      <input type="checkbox" required />
+      <input type="checkbox" name="consent" required />
       <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
     </label>
+    <p class="form-field-error hidden" data-error-for="consent"></p>
+    <div class="form-error-box hidden" data-form-error></div>
+    <input type="hidden" name="form_id" value="modal-price" />
+    <input type="hidden" name="page" value="/" />
+    <input type="hidden" name="fill_time_ms" value="" />
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
     <button type="submit" class="modal__submit modal__submit--purple">Узнать цену</button>
   </form>
 </div>
@@ -542,14 +559,22 @@
   <button class="modal__close" aria-label="Закрыть">&times;</button>
   <h2 class="modal__title">Заполните форму</h2>
   <p class="modal__subtitle">Чтобы получить <span class="modal__accent--yellow">пробный доступ</span> к&nbsp;КонсультантПлюс и&nbsp;сервису ЧДК-Право</p>
-  <form class="modal__form" action="#" method="POST">
-    <input type="text" class="modal__input" placeholder="Ваше Имя" required />
-    <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
-    <input type="email" class="modal__input" placeholder="Электронная почта" />
+  <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-trial" data-thanks="/thanks.html">
+    <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+    <p class="form-field-error hidden" data-error-for="name"></p>
+    <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+    <p class="form-field-error hidden" data-error-for="phone"></p>
+    <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
     <label class="modal__checkbox">
-      <input type="checkbox" required />
+      <input type="checkbox" name="consent" required />
       <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
     </label>
+    <p class="form-field-error hidden" data-error-for="consent"></p>
+    <div class="form-error-box hidden" data-form-error></div>
+    <input type="hidden" name="form_id" value="modal-trial" />
+    <input type="hidden" name="page" value="/" />
+    <input type="hidden" name="fill_time_ms" value="" />
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
     <button type="submit" class="modal__submit modal__submit--yellow">Получить бесплатный доступ</button>
   </form>
 </div>
@@ -571,14 +596,22 @@
   <div class="modal__step" data-step="b">
     <h2 class="modal__title">Заполните форму</h2>
     <p class="modal__subtitle">Наш специалист свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
-    <form class="modal__form" action="#" method="POST">
-      <input type="text" class="modal__input" placeholder="Ваше Имя" required />
-      <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
-      <input type="email" class="modal__input" placeholder="Электронная почта" />
+    <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-lk-client" data-thanks="/thanks.html">
+      <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+      <p class="form-field-error hidden" data-error-for="name"></p>
+      <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+      <p class="form-field-error hidden" data-error-for="phone"></p>
+      <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
       <label class="modal__checkbox">
-        <input type="checkbox" required />
+        <input type="checkbox" name="consent" required />
         <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
       </label>
+      <p class="form-field-error hidden" data-error-for="consent"></p>
+      <div class="form-error-box hidden" data-form-error></div>
+      <input type="hidden" name="form_id" value="modal-lk-client" />
+      <input type="hidden" name="page" value="/" />
+      <input type="hidden" name="fill_time_ms" value="" />
+      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <button type="submit" class="modal__submit modal__submit--yellow">Отправить</button>
     </form>
   </div>
@@ -587,15 +620,23 @@
   <div class="modal__step" data-step="c">
     <h2 class="modal__title">Заполните форму</h2>
     <p class="modal__subtitle">Наш специалист свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
-    <form class="modal__form" action="#" method="POST">
-      <input type="text" class="modal__input" placeholder="Ваше Имя" required />
-      <input type="tel" class="modal__input" placeholder="+7 (9__) ___ - __ - __" required />
-      <input type="email" class="modal__input" placeholder="Электронная почта" />
-      <textarea class="modal__input modal__textarea" placeholder="Ваш вопрос"></textarea>
+    <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-lk-new" data-thanks="/thanks.html">
+      <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+      <p class="form-field-error hidden" data-error-for="name"></p>
+      <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+      <p class="form-field-error hidden" data-error-for="phone"></p>
+      <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
+      <textarea name="comment" class="modal__input modal__textarea" placeholder="Ваш вопрос"></textarea>
       <label class="modal__checkbox">
-        <input type="checkbox" required />
+        <input type="checkbox" name="consent" required />
         <span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
       </label>
+      <p class="form-field-error hidden" data-error-for="consent"></p>
+      <div class="form-error-box hidden" data-form-error></div>
+      <input type="hidden" name="form_id" value="modal-lk-new" />
+      <input type="hidden" name="page" value="/" />
+      <input type="hidden" name="fill_time_ms" value="" />
+      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <button type="submit" class="modal__submit modal__submit--yellow">Отправить</button>
     </form>
   </div>

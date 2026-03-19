@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Купить КонсультантПлюс — СПБ Консультант</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+<!-- ====== ШАПКА ====== -->
+<header class="header">
+  <div class="header-top">
+    <div class="header-top__inner">
+      <div class="header-top__logos">
+        <a href="/" class="header-top__logo-link">
+          <img src="/img/logo-consultant.svg" alt="КонсультантПлюс" class="logo-consultant" />
+        </a>
+        <a href="/" class="header-top__logo-link">
+          <img src="/img/logo-chdk.svg" alt="ЧДК Право" class="logo-chdk" />
+        </a>
+      </div>
+      <div class="header-top__right">
+        <div class="header-top__phone-block">
+          <span class="phone-icon"></span>
+          <div class="header-top__phone-info">
+            <a href="tel:+78123344481" class="header-top__phone-number">8 812 334 44 81</a>
+            <span class="header-top__phone-hours">пн-пт 9:00-19:00</span>
+          </div>
+        </div>
+        <div class="header-top__messengers">
+          <a href="#" class="messenger-link" aria-label="MAX">
+            <img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" />
+          </a>
+          <a href="#" class="messenger-link" aria-label="Telegram">
+            <img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" />
+          </a>
+        </div>
+        <a href="#" class="btn btn--yellow-on-purple header-top__cta-btn">Узнать цену</a>
+      </div>
+      <button class="header-burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <div class="header-nav__inner">
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Бухгалтеру</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Юристу</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Руководителю</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Бюджету</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Линия консультаций</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">О нас</a></li>
+        <li class="header-nav__item header-nav__item--dropdown">
+          <button class="header-nav__link header-nav__link--dropdown" aria-expanded="false">
+            Новости
+            <svg class="nav-arrow" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="header-nav__dropdown">
+            <a href="#" class="header-nav__dropdown-link">Новости</a>
+            <a href="#" class="header-nav__dropdown-link">Вопрос-ответ</a>
+            <a href="#" class="header-nav__dropdown-link">Правовые сборники</a>
+          </div>
+        </li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+        <li class="header-nav__item header-nav__item--lk">
+          <a href="#" class="header-nav__link header-nav__link--lk">
+            <img src="/img/lk-icon.svg" alt="" class="lk-icon" />
+            Личный кабинет
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-nav__line"></div>
+  </nav>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+        <li><a href="#" class="mobile-menu__link">Бухгалтеру</a></li>
+        <li><a href="#" class="mobile-menu__link">Юристу</a></li>
+        <li><a href="#" class="mobile-menu__link">Руководителю</a></li>
+        <li><a href="#" class="mobile-menu__link">Бюджету</a></li>
+        <li><a href="#" class="mobile-menu__link">Линия консультаций</a></li>
+        <li><a href="#" class="mobile-menu__link">О нас</a></li>
+        <li><a href="#" class="mobile-menu__link">Новости</a></li>
+        <li><a href="#" class="mobile-menu__link">Вопрос-ответ</a></li>
+        <li><a href="#" class="mobile-menu__link">Правовые сборники</a></li>
+        <li><a href="#" class="mobile-menu__link">Контакты</a></li>
+        <li><a href="#" class="mobile-menu__link mobile-menu__link--lk">Личный кабинет</a></li>
+      </ul>
+      <div class="mobile-menu__contacts">
+        <a href="tel:+78123344481" class="mobile-menu__phone">8 812 334 44 81</a>
+        <span class="mobile-menu__hours">пн-пт 9:00-19:00</span>
+        <div class="mobile-menu__messengers">
+          <a href="#" aria-label="MAX"><img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" /></a>
+          <a href="#" aria-label="Telegram"><img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" /></a>
+        </div>
+        <a href="#" class="btn btn--yellow mobile-menu__cta">Узнать цену</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ====== ХЛЕБНЫЕ КРОШКИ ====== -->
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+  <div class="breadcrumbs__inner">
+    <a href="/" class="breadcrumbs__link">Главная</a>
+    <span class="breadcrumbs__sep">&gt;</span>
+    <a href="#" class="breadcrumbs__link">О СПС КонсультантПлюс</a>
+    <span class="breadcrumbs__sep">&gt;</span>
+    <span class="breadcrumbs__current">Купить КонсультантПлюс</span>
+  </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<section class="buy-hero">
+  <div class="buy-hero__inner">
+    <div class="buy-hero__content">
+      <h1 class="buy-hero__title">
+        <span class="buy-hero__title--purple">Купить</span> КонсультантПлюс
+      </h1>
+      <p class="buy-hero__text">
+        <strong class="buy-hero__company">ЧДК-Право</strong>&nbsp;&mdash; официальный представитель КонсультантПлюс с&nbsp;1996&nbsp;года.
+      </p>
+      <p class="buy-hero__text">
+        Мы подберём для вас оптимальный комплект и&nbsp;предложим индивидуальные условия.
+      </p>
+      <a href="#" class="btn btn--purple buy-hero__btn">Купить</a>
+    </div>
+    <div class="buy-hero__image">
+      <img src="/img/hero-boxes.png" alt="Комплекты КонсультантПлюс" class="buy-hero__img" />
+    </div>
+  </div>
+</section>
+
+<!-- ====== 4 ПРИЧИНЫ ====== -->
+<section class="reasons">
+  <div class="reasons__inner">
+    <h2 class="reasons__title">4 причины купить КонсультантПлюс у&nbsp;ЧДК-Право</h2>
+    <div class="reasons__grid">
+      <div class="reasons__item">
+        <div class="reasons__marker reasons__marker--purple">1</div>
+        <div class="reasons__info">
+          <h3 class="reasons__heading">30 лет поддерживаем бизнес</h3>
+          <p class="reasons__desc">Мы работаем более 1000 крупных компаний Петербурга и&nbsp;22000 пользователей по&nbsp;всей России.</p>
+        </div>
+      </div>
+      <div class="reasons__item">
+        <div class="reasons__marker reasons__marker--yellow">2</div>
+        <div class="reasons__info">
+          <h3 class="reasons__heading">Гарантия качества</h3>
+          <p class="reasons__desc">Мы поставляем, обслуживаем, модернизируем и&nbsp;сопровождаем только оригинальную продукцию.</p>
+        </div>
+      </div>
+      <div class="reasons__item">
+        <div class="reasons__marker reasons__marker--yellow">3</div>
+        <div class="reasons__info">
+          <h3 class="reasons__heading">Программа поддержки клиентов</h3>
+          <p class="reasons__desc">Техническая поддержка, линия консультаций и&nbsp;обучение работе с&nbsp;системой для каждого клиента.</p>
+        </div>
+      </div>
+      <div class="reasons__item">
+        <div class="reasons__marker reasons__marker--purple">4</div>
+        <div class="reasons__info">
+          <h3 class="reasons__heading">Личный кабинет ЧДК-Онлайн</h3>
+          <p class="reasons__desc">Это эксклюзивный сервис с&nbsp;полезными настройками, сквозным и&nbsp;проверкой контрагента.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ОТ ЧЕГО ЗАВИСИТ СТОИМОСТЬ ====== -->
+<section class="cost">
+  <div class="cost__inner">
+    <h2 class="cost__title">От чего зависит стоимость КонсультантПлюс?</h2>
+    <div class="cost__grid">
+      <div class="cost__card">
+        <img src="/img/icon-cost-1.svg" alt="" class="cost__icon" />
+        <p class="cost__text">Количество и&nbsp;состав информационных банков</p>
+      </div>
+      <div class="cost__card">
+        <img src="/img/icon-cost-2.svg" alt="" class="cost__icon" />
+        <p class="cost__text">Специализация и&nbsp;количество пользователей</p>
+      </div>
+      <div class="cost__card">
+        <img src="/img/icon-cost-3.svg" alt="" class="cost__icon" />
+        <p class="cost__text">Версия системы: онлайн, локальная, на&nbsp;флеш-накопителе</p>
+      </div>
+      <div class="cost__card">
+        <img src="/img/icon-cost-4.svg" alt="" class="cost__icon" />
+        <p class="cost__text">Действующие акции и&nbsp;спецпредложения</p>
+      </div>
+    </div>
+    <div class="cost__action">
+      <a href="#" class="btn btn--yellow cost__btn">Узнать цену</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ГОТОВЫЕ КОМПЛЕКТЫ (ТАБЫ) ====== -->
+<section class="kits">
+  <div class="kits__inner">
+    <h2 class="kits__title">Готовые комплекты Консультант Плюс</h2>
+    <div class="kits__layout">
+      <div class="kits__tabs">
+        <button class="kits__tab is-active" data-tab="0">
+          <img src="/img/box-buh.png" alt="" class="kits__tab-img" />
+          <div class="kits__tab-info">
+            <h3 class="kits__tab-title">Консультант Бухгалтер Оптимальный</h3>
+            <p class="kits__tab-desc">Все необходимое для решения задач бухгалтера и&nbsp;специалиста по&nbsp;кадрам</p>
+          </div>
+        </button>
+        <button class="kits__tab" data-tab="1">
+          <img src="/img/box-jurist.png" alt="" class="kits__tab-img" />
+          <div class="kits__tab-info">
+            <h3 class="kits__tab-title">Консультант Юрист Оптимальный</h3>
+            <p class="kits__tab-desc">Необходимая нормативная база и&nbsp;судебная практика для юриста</p>
+          </div>
+        </button>
+        <button class="kits__tab" data-tab="2">
+          <img src="/img/box-universal.png" alt="" class="kits__tab-img" />
+          <div class="kits__tab-info">
+            <h3 class="kits__tab-title">Консультант Универсал Оптимальный</h3>
+            <p class="kits__tab-desc">Оптимальный комплект для специалистов и&nbsp;руководителей коммерческих организаций</p>
+          </div>
+        </button>
+        <button class="kits__tab" data-tab="3">
+          <img src="/img/box-budget.png" alt="" class="kits__tab-img" />
+          <div class="kits__tab-info">
+            <h3 class="kits__tab-title">Консультант Бюджетные организации Оптимальный</h3>
+            <p class="kits__tab-desc">Необходимая нормативно-правовая и&nbsp;аналитическая информация для бюджетных организаций</p>
+          </div>
+        </button>
+      </div>
+      <div class="kits__content">
+        <h3 class="kits__content-title" id="kitsTitle"></h3>
+        <ul class="kits__list" id="kitsList"></ul>
+        <div class="kits__content-actions">
+          <a href="#" class="btn btn--outline-purple">Купить</a>
+          <a href="#" class="btn btn--link-purple">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ОТЗЫВЫ КЛИЕНТОВ ====== -->
+<section class="reviews">
+  <div class="reviews__container">
+    <div class="reviews__inner">
+      <h2 class="reviews__title">Отзывы клиентов</h2>
+      <div class="reviews__carousel">
+        <button class="reviews__btn reviews__btn--prev" aria-label="Предыдущий отзыв">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="reviews__viewport">
+          <div class="reviews__track">
+            <div class="reviews__slide" data-index="0"><div class="reviews__card"><img src="/img/otz1.png" alt="Отзыв ООО «БАДИС»" class="reviews__card-img" loading="lazy" /></div></div>
+            <div class="reviews__slide" data-index="1"><div class="reviews__card"><img src="/img/otz2.png" alt="Отзыв ЗАО «Тепломагистраль»" class="reviews__card-img" loading="lazy" /></div></div>
+            <div class="reviews__slide" data-index="2"><div class="reviews__card"><img src="/img/otz3.png" alt="Отзыв ООО «РЭЦ «Петрохим-Технология»" class="reviews__card-img" loading="lazy" /></div></div>
+            <div class="reviews__slide" data-index="3"><div class="reviews__card"><img src="/img/otz4.png" alt="Отзыв НО «ФКР МКД СПБ»" class="reviews__card-img" loading="lazy" /></div></div>
+            <div class="reviews__slide" data-index="4"><div class="reviews__card"><img src="/img/otz5.png" alt="Отзыв РГПУ им. А. И. Герцена" class="reviews__card-img" loading="lazy" /></div></div>
+          </div>
+        </div>
+        <button class="reviews__btn reviews__btn--next" aria-label="Следующий отзыв">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ЕЩЕЁ ДУМАЕТЕ? ПРОБНЫЙ ДОСТУП ====== -->
+<section class="trial">
+  <div class="trial__inner">
+    <h2 class="trial__section-title">Ещё думаете? Получите пробный доступ на&nbsp;2&nbsp;дня</h2>
+    <div class="trial__card">
+      <div class="trial__left">
+        <p class="trial__promo">
+          <span class="trial__title--orange">Протестируйте систему</span> перед покупкой и&nbsp;убедитесь в&nbsp;её удобстве. Наш специалист подберёт подходящий комплект и&nbsp;проведёт персональную презентацию.
+        </p>
+        <div class="trial__features">
+          <div class="trial__feature trial__feature--orange">
+            <div class="trial__feature-icon">
+              <img src="/img/logo-consultant-crop.svg" alt="" />
+            </div>
+            <div class="trial__feature-info">
+              <span class="trial__feature-name">Система КонсультантПлюс</span>
+              <span class="trial__feature-desc">Полный доступ на 2 дня</span>
+            </div>
+          </div>
+          <div class="trial__feature trial__feature--purple">
+            <div class="trial__feature-icon">
+              <img src="/img/lk-icon-big.svg" alt="" />
+            </div>
+            <div class="trial__feature-info">
+              <span class="trial__feature-name">Личный кабинет ЧДК-Онлайн</span>
+              <span class="trial__feature-desc">Эксклюзивный сервис для клиентов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trial__right">
+        <form class="trial__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="trial-buy" data-thanks="/thanks.html">
+          <input type="text" name="name" class="trial__input" placeholder="Ваше Имя" />
+          <p class="form-field-error hidden" data-error-for="name"></p>
+          <div class="trial__row">
+            <input type="tel" name="phone" class="trial__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+            <input type="email" name="email" class="trial__input" placeholder="Электронная почта" />
+          </div>
+          <p class="form-field-error hidden" data-error-for="phone"></p>
+          <label class="trial__checkbox">
+            <input type="checkbox" name="consent" required />
+            <span>Я ознакомлен с <a href="#" class="trial__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span>
+          </label>
+          <p class="form-field-error hidden" data-error-for="consent"></p>
+          <div class="form-error-box hidden" data-form-error></div>
+          <div class="form-success-box hidden" data-form-success></div>
+          <input type="hidden" name="form_id" value="trial-buy" />
+          <input type="hidden" name="page" value="/buy.html" />
+          <input type="hidden" name="fill_time_ms" value="" />
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="trial__submit">Попробовать бесплатно</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ПОДВАЛ ====== -->
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__logos">
+          <a href="/" class="footer__logo-link">
+            <img src="/img/logo-consultant.svg" alt="КонсультантПлюс" class="footer__logo footer__logo--consultant" />
+          </a>
+          <a href="/" class="footer__logo-link">
+            <img src="/img/logo-chdk.svg" alt="ЧДК Право" class="footer__logo footer__logo--chdk" />
+          </a>
+        </div>
+        <a href="#" class="btn btn--yellow footer__price-btn">Скачать прайс-лист</a>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__contacts">
+          <div class="footer__phone-row">
+            <div class="footer__phone-block">
+              <span class="footer__phone-icon"></span>
+              <a href="tel:+78123344481" class="footer__phone-number">8 812 334 44 81</a>
+            </div>
+            <div class="footer__messengers footer__messengers--mobile">
+              <a href="#" class="messenger-link" aria-label="MAX"><img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" /></a>
+              <a href="#" class="messenger-link" aria-label="Telegram"><img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" /></a>
+            </div>
+          </div>
+          <span class="footer__phone-hours">пн-пт 9:00-19:00</span>
+          <div class="footer__messengers footer__messengers--desktop">
+            <a href="#" class="messenger-link" aria-label="MAX"><img src="/img/logo-max.svg" alt="MAX" class="messenger-icon" /></a>
+            <a href="#" class="messenger-link" aria-label="Telegram"><img src="/img/logo-telegram.svg" alt="Telegram" class="messenger-icon" /></a>
+          </div>
+        </div>
+        <a href="#" class="btn btn--yellow footer__price-btn footer__price-btn--mobile">Скачать прайс-лист</a>
+        <nav class="footer__nav footer__nav--col1">
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link">О СПС КонсультантПлюс</a></li>
+            <li><a href="#" class="footer__nav-link">Системы</a></li>
+            <li><a href="#" class="footer__nav-link">Пробный доступ</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--col2">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item--desktop-only"><a href="#" class="footer__nav-link">Контакты</a></li>
+            <li><a href="#" class="footer__nav-link">Обучение</a></li>
+            <li><a href="#" class="footer__nav-link">Сервис для клиентов</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link footer__nav-link--muted">Политика конфиденциальности</a></li>
+            <li class="footer__nav-item--mobile-only"><a href="#" class="footer__nav-link footer__nav-link--muted">Пользовательское соглашение</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--col3 footer__nav--desktop-only">
+          <ul class="footer__nav-list">
+            <li><a href="#" class="footer__nav-link footer__nav-link--muted">Политика конфиденциальности</a></li>
+            <li><a href="#" class="footer__nav-link footer__nav-link--muted">Пользовательское соглашение</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ====== МОДАЛЬНЫЕ ОКНА ====== -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<div class="modal" id="modalPrice">
+  <button class="modal__close" aria-label="Закрыть">&times;</button>
+  <h2 class="modal__title">Заполните форму</h2>
+  <p class="modal__subtitle">Чтобы получить <span class="modal__accent--purple">персональное предложение</span> на&nbsp;КонсультантПлюс</p>
+  <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-price-buy" data-thanks="/thanks.html">
+    <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+    <p class="form-field-error hidden" data-error-for="name"></p>
+    <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+    <p class="form-field-error hidden" data-error-for="phone"></p>
+    <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
+    <label class="modal__checkbox"><input type="checkbox" name="consent" required /><span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span></label>
+    <p class="form-field-error hidden" data-error-for="consent"></p>
+    <div class="form-error-box hidden" data-form-error></div>
+    <input type="hidden" name="form_id" value="modal-price-buy" />
+    <input type="hidden" name="page" value="/buy.html" />
+    <input type="hidden" name="fill_time_ms" value="" />
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <button type="submit" class="modal__submit modal__submit--purple">Узнать цену</button>
+  </form>
+</div>
+
+<div class="modal" id="modalTrial">
+  <button class="modal__close" aria-label="Закрыть">&times;</button>
+  <h2 class="modal__title">Заполните форму</h2>
+  <p class="modal__subtitle">Чтобы получить <span class="modal__accent--yellow">пробный доступ</span> к&nbsp;КонсультантПлюс и&nbsp;сервису ЧДК-Право</p>
+  <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-trial-buy" data-thanks="/thanks.html">
+    <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+    <p class="form-field-error hidden" data-error-for="name"></p>
+    <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+    <p class="form-field-error hidden" data-error-for="phone"></p>
+    <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
+    <label class="modal__checkbox"><input type="checkbox" name="consent" required /><span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span></label>
+    <p class="form-field-error hidden" data-error-for="consent"></p>
+    <div class="form-error-box hidden" data-form-error></div>
+    <input type="hidden" name="form_id" value="modal-trial-buy" />
+    <input type="hidden" name="page" value="/buy.html" />
+    <input type="hidden" name="fill_time_ms" value="" />
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <button type="submit" class="modal__submit modal__submit--yellow">Получить бесплатный доступ</button>
+  </form>
+</div>
+
+<div class="modal" id="modalLk">
+  <button class="modal__close" aria-label="Закрыть">&times;</button>
+  <div class="modal__step modal__step--active" data-step="a">
+    <h2 class="modal__title">Вы уже являетесь нашим клиентом?</h2>
+    <div class="modal__choice">
+      <button type="button" class="modal__choice-btn modal__choice-btn--purple" data-goto="b">Да</button>
+      <button type="button" class="modal__choice-btn modal__choice-btn--yellow" data-goto="c">Еще нет</button>
+    </div>
+  </div>
+  <div class="modal__step" data-step="b">
+    <h2 class="modal__title">Заполните форму</h2>
+    <p class="modal__subtitle">Наш специалист свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
+    <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-lk-client-buy" data-thanks="/thanks.html">
+      <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+      <p class="form-field-error hidden" data-error-for="name"></p>
+      <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+      <p class="form-field-error hidden" data-error-for="phone"></p>
+      <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
+      <label class="modal__checkbox"><input type="checkbox" name="consent" required /><span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span></label>
+      <p class="form-field-error hidden" data-error-for="consent"></p>
+      <div class="form-error-box hidden" data-form-error></div>
+      <input type="hidden" name="form_id" value="modal-lk-client-buy" />
+      <input type="hidden" name="page" value="/buy.html" />
+      <input type="hidden" name="fill_time_ms" value="" />
+      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button type="submit" class="modal__submit modal__submit--yellow">Отправить</button>
+    </form>
+  </div>
+  <div class="modal__step" data-step="c">
+    <h2 class="modal__title">Заполните форму</h2>
+    <p class="modal__subtitle">Наш специалист свяжется с&nbsp;Вами в&nbsp;ближайшее время</p>
+    <form class="modal__form js-lead-form" action="/api/lead.php" method="POST" novalidate data-form-id="modal-lk-new-buy" data-thanks="/thanks.html">
+      <input type="text" name="name" class="modal__input" placeholder="Ваше Имя" />
+      <p class="form-field-error hidden" data-error-for="name"></p>
+      <input type="tel" name="phone" class="modal__input mask-phone" placeholder="+7 (9__) ___-__-__" required />
+      <p class="form-field-error hidden" data-error-for="phone"></p>
+      <input type="email" name="email" class="modal__input" placeholder="Электронная почта" />
+      <textarea name="comment" class="modal__input modal__textarea" placeholder="Ваш вопрос"></textarea>
+      <label class="modal__checkbox"><input type="checkbox" name="consent" required /><span>Я ознакомлен с <a href="#" class="modal__policy-link">политикой конфиденциальности</a> и&nbsp;даю согласие на&nbsp;обработку персональных данных</span></label>
+      <p class="form-field-error hidden" data-error-for="consent"></p>
+      <div class="form-error-box hidden" data-form-error></div>
+      <input type="hidden" name="form_id" value="modal-lk-new-buy" />
+      <input type="hidden" name="page" value="/buy.html" />
+      <input type="hidden" name="fill_time_ms" value="" />
+      <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button type="submit" class="modal__submit modal__submit--yellow">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<!-- ====== СКРИПТЫ ====== -->
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
